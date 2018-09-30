@@ -1,9 +1,6 @@
 # SS-Panel for BT-Panel
-
 ## 环境要求
-
 1. Pure CentOS 6 / CentOS 7 (32 bit / 64 bit) System
-
 2. Greater than 256M Memory
 
 ## 安装说明
