@@ -1,9 +1,13 @@
 # SS-Panel for BT-Panel
+
 ## 环境要求
-1. Pure CentOS 6 / CentOS 7 (32 bit / 64 bit) System
-2. Greater than 256M Memory
+
+* Pure CentOS 6 / CentOS 7 (32 bit / 64 bit) System
+
+* Greater than 256M Memory
 
 ## 安装说明
+
 1. 安装 BT-Panel
 
    ```
@@ -99,6 +103,10 @@
    $System_Config['smtp_passsword'] = '';
    $System_Config['smtp_ssl'] = 'true';
    ```
+
+11. 默认用户信息
+   * 用户名：`admin@domain.local`
+   * 密码：`,zChr=jwhrP!unMbO>ns4roSv3pj.3uo`
 
 ## 常见问题
 
