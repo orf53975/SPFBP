@@ -1,8 +1,8 @@
 # SS-Panel for BT-Panel
 
-[![Github Pre-Releases](https://img.shields.io/github/downloads-pre/atom/atom/latest/total.svg)](https://github.com/yanranxiaoxi/SPFBP/releases)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg)
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/yanranxiaoxi/SPFBP/blob/master/LICENSE)
+[![Github Pre-Releases](https://img.shields.io/badge/downloads-21.0%20MB-brightgreen.svg)](https://github.com/yanranxiaoxi/SPFBP/releases)
+![GitHub code size](https://img.shields.io/badge/code%20size-54.3%20MB-blue.svg)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yanranxiaoxi/SPFBP/blob/master/LICENSE)
 
 ## 环境要求
 
