@@ -1,5 +1,9 @@
 # SS-Panel for BT-Panel
 
+[![Github Pre-Releases](https://img.shields.io/github/downloads-pre/atom/atom/latest/total.svg)](https://github.com/yanranxiaoxi/SPFBP/releases)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/badges/shields.svg)
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/yanranxiaoxi/SPFBP/blob/master/LICENSE)
+
 ## 环境要求
 
 * Pure CentOS 6 / CentOS 7 (32 bit / 64 bit) System
