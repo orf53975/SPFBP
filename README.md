@@ -1,6 +1,6 @@
 # SS-Panel for BT-Panel
 
-[![Github Pre-Releases](https://img.shields.io/badge/downloads-21.0%20MB-brightgreen.svg)](https://github.com/yanranxiaoxi/SPFBP/releases)
+[![Github Pre-Releases](https://img.shields.io/badge/downloads-21.0%20MB-brightgreen.svg)](https://github.com/yanranxiaoxi/SPFBP/archive/1.0.0-beta.zip)
 ![GitHub code size](https://img.shields.io/badge/code%20size-54.3%20MB-blue.svg)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yanranxiaoxi/SPFBP/blob/master/LICENSE)
 
