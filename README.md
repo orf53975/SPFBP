@@ -26,7 +26,7 @@
 
 4. 在配置文件中找到 `root /home/wwwroot/domain.com;`，并在你的域名后添加 `/public`
 
-   * 例如：`root /home/wwwroot/domain.com/public`
+   * 例如：`root /home/wwwroot/domain.com/public;`
 
 5. 添加伪静态规则
 
