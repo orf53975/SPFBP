@@ -259,7 +259,7 @@ $(document).ready(function () {
 		captchaObj.appendTo("#embed-captcha");
 
 		captcha = captchaObj;
-		// 更多接口参考：http://www.geetest.com/install/sections/idx-client-sdk.html
+
     };
 
 	initGeetest({
