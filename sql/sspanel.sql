@@ -510,7 +510,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- 转存表中的数据 `user`
 --
 
-INSERT INTO `user` VALUES (1,'Administrator','admin@domain.local','dedb6d897de47ebab9ead6d80883775abcd605c1c57d46e71e8f5d631fb02a8e','iHAH6jh0uD9TsYdg',0,0,0,'A',107374182400,10240,1,1,1,0,0,0,'2018-01-01 00:00:00',0,10000.00,0,0,'chacha20-ietf',0,'127.0.0.1',0.00,0,1,1,'',14358191,0,9,'8102-12-31 23:59:59','8102-12-31 23:59:59','cute','2TFGSYHQ3FJLZSWX',0,NULL,NULL,0,0,0.00,'origin',NULL,'plain',NULL,NULL,NULL,NULL,0,0,NULL);
+INSERT INTO `user` VALUES (1,'Administrator','admin@domain.local','dedb6d897de47ebab9ead6d80883775abcd605c1c57d46e71e8f5d631fb02a8e','iHAH6jh0uD9TsYdg',0,0,0,'A',107374182400,10240,1,1,1,0,0,0,'2018-01-01 00:00:00',0,10000.00,0,0,'chacha20-ietf',0,'127.0.0.1',0.00,0,1,1,'',0,0,9,'8102-12-31 23:59:59','8102-12-31 23:59:59','cute','2TFGSYHQ3FJLZSWX',0,NULL,NULL,0,0,0.00,'origin',NULL,'plain',NULL,NULL,NULL,NULL,0,0,NULL);
 
 -- --------------------------------------------------------
 
