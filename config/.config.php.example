@@ -36,10 +36,10 @@ $System_Config['user_speedlimit']='0';
 
 
 #邀请新用户获得流量奖励，单位G
-$System_Config['invite_gift']='2';
+$System_Config['invite_gift']='0';
 
 #新用户通过私人邀请链接注册，获得奖励金额（鼓励消费）
-$System_Config['invite_get_money']='0';
+$System_Config['invite_get_money']='1';
 
 // 用户签到设置
 $System_Config['checkinMin'] = '10';       // 签到最少流量 单位MB
@@ -159,7 +159,7 @@ $System_Config['wecenter_cookie_prefix']='mmg_';
 $System_Config['wecenter_cookie_key']='';
 
 #充值返利百分比
-$System_Config['code_payback']='0';
+$System_Config['code_payback']='10';
 
 #注册时的流量重置日以及需要重置的流量,0不重置
 $System_Config['reg_auto_reset_day']='0';
