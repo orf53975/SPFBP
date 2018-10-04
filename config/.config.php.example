@@ -28,11 +28,11 @@ $System_Config['user_class_expire_default']='2';
 $System_Config['user_class_default']='9';
 
 #用户注册客户端数量限制，0为不限制
-$System_Config['user_conn']='2';
+$System_Config['user_conn']='0';
 
 
 #用户注册速度默认限制，0为不限制
-$System_Config['user_speedlimit']='2';
+$System_Config['user_speedlimit']='0';
 
 
 #邀请新用户获得流量奖励，单位G
@@ -201,13 +201,13 @@ $System_Config['email_verify_iplimit']='10';
 $System_Config['reg_method']='chacha20-ietf';
 
 #注册时默认协议
-$System_Config['reg_protocol']='plain';
+$System_Config['reg_protocol']='origin';
 
 #注册时默认协议参数
 $System_Config['reg_protocol_param']='';
 
 #注册时默认混淆方式
-$System_Config['reg_obfs']='http_simple';
+$System_Config['reg_obfs']='plain';
 
 #注册时默认混淆参数
 $System_Config['reg_obfs_param']='jd.hk';
