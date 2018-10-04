@@ -78,7 +78,7 @@
    $System_Config['key'] = 'randomkey';
    
    # 站点名称
-   $System_Config['appName'] = 'SPFBP';
+   $System_Config['appName'] = 'SS-Panel';
    
    # 站点地址
    $System_Config['baseUrl'] = 'https://domain.com';
@@ -102,8 +102,8 @@
    $System_Config['smtp_host'] = 'smtp.domain.com';
    $System_Config['smtp_username'] = 'admin@domain.com';
    $System_Config['smtp_port'] = '465';
-   $System_Config['smtp_name'] = 'admin@domain.com';
-   $System_Config['smtp_sender'] = 'SPFBP 自动通知邮件';
+   $System_Config['smtp_name'] = '自动通知邮件';
+   $System_Config['smtp_sender'] = 'admin@domain.com';
    $System_Config['smtp_passsword'] = '';
    $System_Config['smtp_ssl'] = 'true';
    ```

@@ -1,11 +1,11 @@
 <?php
 
-//  ss-panel v3 配置
+//  SS-Panel 配置
 //
 // !!! 修改此key为随机字符串确保网站安全 !!!
 $System_Config['key'] = 'randomkey';
 $System_Config['debug'] =  'false';  //  正式环境请确保为false
-$System_Config['appName'] = 'SPFBP';             //站点名称
+$System_Config['appName'] = 'SS-Panel';             //站点名称
 $System_Config['baseUrl'] = 'https://domain.com';            // 修改此为站点地址
 $System_Config['timeZone'] = 'PRC';        // PRC 天朝时间  UTC 格林时间
 $System_Config['pwdMethod'] = 'sha256';       // 密码加密   可选 md5,sha256
@@ -31,12 +31,12 @@ $System_Config['user_class_default']='9';
 $System_Config['user_conn']='0';
 
 
-#用户注册速度默认限制，0为不限制
+#用户注册默认速度限制，0为不限制
 $System_Config['user_speedlimit']='0';
 
 
 #邀请新用户获得流量奖励，单位G
-$System_Config['invite_gift']='0';
+$System_Config['invite_gift']='10';
 
 #新用户通过私人邀请链接注册，获得奖励金额（鼓励消费）
 $System_Config['invite_get_money']='1';
@@ -76,8 +76,8 @@ $System_Config['mailgun_sender'] = '';
 $System_Config['smtp_host'] = 'smtp.domain.com';
 $System_Config['smtp_username'] = 'admin@domain.com';
 $System_Config['smtp_port'] = '465';
-$System_Config['smtp_name'] = 'admin@domain.com';
-$System_Config['smtp_sender'] = 'SPFBP 自动通知邮件';
+$System_Config['smtp_name'] = '自动通知邮件';
+$System_Config['smtp_sender'] = 'admin@domain.com';
 $System_Config['smtp_passsword'] = '';
 $System_Config['smtp_ssl'] = 'true';
 
