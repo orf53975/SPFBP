@@ -19,7 +19,7 @@
 				<div class="card">
 					<div class="card-main">
 						<div class="card-inner">
-							<p>这里是最近的解封IP记录。</p>
+							<p>这里是最近的解封 IP 记录。</p>
 							<p>显示表项: {include file='table/checkbox.tpl'}
 							</p>
 						</div>

@@ -11,7 +11,7 @@
 	<main class="content">
 		<div class="content-header ui-content-header">
 			<div class="container">
-				<h1 class="content-heading">节点被封IP</h1>
+				<h1 class="content-heading">节点被封 IP</h1>
 			</div>
 		</div>
 		<div class="container">
@@ -21,7 +21,7 @@
 					<div class="card">
 						<div class="card-main">
 							<div class="card-inner">
-								<p>这里是最近的节点上捕捉到的进行非法行为的IP。</p>
+								<p>这里是最近的节点上捕捉到的进行非法行为的 IP。</p>
 								<p>显示表项:
 	                {include file='table/checkbox.tpl'}
 	              </p>

@@ -39,7 +39,7 @@
 						<div class="card-main">
 							<div class="card-inner">
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="sign">GPG签名</label>
+									<label class="floating-label" for="sign">GPG 签名</label>
 									<textarea class="form-control" id="sign" rows="15"></textarea>
 								</div>
 								

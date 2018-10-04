@@ -33,7 +33,7 @@
 								</div>
 
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="auto_renew">自动续订天数（0为不允许自动续订，其他为到了那么多天之后就会自动从用户的账户上划钱抵扣）</label>
+									<label class="floating-label" for="auto_renew">自动续订天数 (0 为不允许自动续订)</label>
 									<input class="form-control" id="auto_renew" type="text" value="{$shop->auto_renew}">
 								</div>
 
@@ -48,7 +48,7 @@
 							<div class="card-inner">
 
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="bandwidth">流量（GB）</label>
+									<label class="floating-label" for="bandwidth">流量 (单位 GB)</label>
 									<input class="form-control" id="bandwidth" type="text" value="{$shop->bandwidth()}">
 								</div>
 
@@ -56,7 +56,7 @@
 								<div class="form-group form-group-label">
 									<div class="checkbox switch">
 										<label for="auto_reset_bandwidth">
-											<input {if $shop->auto_reset_bandwidth==1}checked{/if} class="access-hide" id="auto_reset_bandwidth" type="checkbox"><span class="switch-toggle"></span>续费时自动重置用户流量为上面这个流量值
+											<input {if $shop->auto_reset_bandwidth==1}checked{/if} class="access-hide" id="auto_reset_bandwidth" type="checkbox"><span class="switch-toggle"></span>续费时自动重置用户流量为以上这个流量值
 										</label>
 									</div>
 								</div>
@@ -110,7 +110,7 @@
 								</div>
 
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="reset_value">重置流量为多少G</label>
+									<label class="floating-label" for="reset_value">重置流量为多少 GB</label>
 									<input class="form-control" id="reset_value" type="number" value="{$shop->reset_value()}">
 								</div>
 							</div>

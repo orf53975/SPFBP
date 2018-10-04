@@ -197,14 +197,14 @@ class UserController extends AdminController
             $shop = Shop::where("id", $shopId)->where("status", 1)->first();
             if ($shop == null) {
                 $result['ret'] = 0;
-                $result['msg'] = "naive,没有选择套餐！";
+                $result['msg'] = "没有选择套餐！";
                 return $response->getBody()->write(json_encode($result));
             }
 
             $shop->buy($user);
 
             $result['ret'] = 1;
-            $result['msg'] = "注册成功！肥羊大佬是不是很厉害！";
+            $result['msg'] = "注册成功！";
             return $response->getBody()->write(json_encode($result));
 
 

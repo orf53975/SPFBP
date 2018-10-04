@@ -32,7 +32,7 @@
 									</div>
 
 									<div class="form-group form-group-label">
-										<label class="floating-label" for="server">节点IP(不填则自动获取，填写请按照 <a href="https://github.com/esdeathlove/ss-panel-v3-mod/wiki/%E8%8A%82%E7%82%B9IP%E5%A1%AB%E5%86%99%E8%A7%84%E5%88%99">这里</a> 的规则进行填写)</label>
+										<label class="floating-label" for="server">节点IP (不填则自动获取)</label>
 										<input class="form-control" id="node_ip" name="node_ip" type="text">
 									</div>
 
@@ -100,14 +100,14 @@
 												<label class="floating-label" for="sort">节点类型</label>
 												<select id="sort" class="form-control" name="sort">
 													<option value="0">Shadowsocks</option>
-													<option value="1">VPN/Radius基础</option>
+													<option value="1">VPN / Radius基础</option>
 													<option value="2">SSH</option>
 													<option value="3">PAC</option>
 													<option value="4">APN文件外链</option>
 													<option value="5">Anyconnect</option>
 													<option value="6">APN</option>
-													<option value="7">PAC PLUS(Socks 代理生成 PAC文件)</option>
-													<option value="8">PAC PLUS PLUS(HTTPS 代理生成 PAC文件)</option>
+													<option value="7">PAC PLUS (Socks 代理生成 PAC 文件)</option>
+													<option value="8">PAC PLUS PLUS (HTTPS 代理生成 PAC 文件)</option>
 													<option value="9">Shadowsocks 单端口多用户</option>
 													<option value="10">Shadowsocks 中转</option>
 												</select>
@@ -120,29 +120,29 @@
 									</div>
 
 									<div class="form-group form-group-label">
-										<label class="floating-label" for="class">节点等级（不分级请填0，分级为数字）</label>
+										<label class="floating-label" for="class">节点等级 (分级为数字，不分级请填 0)</label>
 										<input class="form-control" id="class" type="text" value="0" name="class">
 									</div>
 
 
 									<div class="form-group form-group-label">
-										<label class="floating-label" for="group">节点群组（分组为数字，不分组请填0）</label>
+										<label class="floating-label" for="group">节点群组 (分组为数字，不分组请填 0)</label>
 										<input class="form-control" id="group" type="text" value="0" name="group">
 									</div>
 
 
 									<div class="form-group form-group-label">
-										<label class="floating-label" for="node_bandwidth_limit">节点流量上限（不使用的话请填0）（GB）</label>
+										<label class="floating-label" for="node_bandwidth_limit">节点流量上限 (不使用的话请填 0，单位 GB)</label>
 										<input class="form-control" id="node_bandwidth_limit" type="text" value="0" name="node_bandwidth_limit">
 									</div>
 
 									<div class="form-group form-group-label">
-										<label class="floating-label" for="bandwidthlimit_resetday">节点流量上限清空日</label>
+										<label class="floating-label" for="bandwidthlimit_resetday">节点流量上限清空日 (如每月第一天则填写 1)</label>
 										<input class="form-control" id="bandwidthlimit_resetday" type="text" value="0" name="bandwidthlimit_resetday">
 									</div>
 
 									<div class="form-group form-group-label">
-										<label class="floating-label" for="node_speedlimit">节点限速(对于每个用户端口)（Mbps）</label>
+										<label class="floating-label" for="node_speedlimit">节点限速 (对于每个用户端口，单位 Mbps)</label>
 										<input class="form-control" id="node_speedlimit" type="text" value="0" name="node_speedlimit">
 									</div>
 								</div>

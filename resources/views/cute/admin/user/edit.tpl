@@ -25,12 +25,12 @@
 								</div>
 								
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="email">备注(仅对管理员可见)</label>
+									<label class="floating-label" for="email">备注 (仅对管理员可见)</label>
 									<input class="form-control" id="remark" type="text" value="{$edit_user->remark}">
 								</div>
 								
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="pass">密码(不修改请留空)</label>
+									<label class="floating-label" for="pass">密码 (不修改请留空)</label>
 									<input class="form-control" id="pass" type="password">
 								</div>
 								
@@ -112,7 +112,7 @@
 						<div class="card-main">
 							<div class="card-inner">
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="transfer_enable">总流量（GB）</label>
+									<label class="floating-label" for="transfer_enable">总流量 (单位 GB)</label>
 									<input class="form-control" id="transfer_enable" type="text" value="{$edit_user->enableTrafficInGB()}">
 								</div>
 								
@@ -133,7 +133,7 @@
 								</div>
 								
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="auto_reset_bandwidth">重置流量值(GB)</label>
+									<label class="floating-label" for="auto_reset_bandwidth">重置流量值</label>
 									<input class="form-control" id="auto_reset_bandwidth" type="number" value="{$edit_user->auto_reset_bandwidth}">
 								</div>
 							</div>
@@ -150,7 +150,7 @@
 								</div>
 								
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="ref_by">邀请人ID</label>
+									<label class="floating-label" for="ref_by">邀请人 ID</label>
 									<input class="form-control" id="ref_by" type="text" value="{$edit_user->ref_by}" readonly>
 								</div>
 							</div>
@@ -162,24 +162,24 @@
 						<div class="card-main">
 							<div class="card-inner">
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="group">用户群组（用户只能访问到组别等于这个数字或0的节点）</label>
+									<label class="floating-label" for="group">用户群组 (用户只能访问到组别等于这个数字或 0 的节点)</label>
 									<input class="form-control" id="group" type="number" value="{$edit_user->node_group}">
 								</div>
 								
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="class">用户级别（用户只能访问到等级小于等于这个数字的节点）</label>
+									<label class="floating-label" for="class">用户级别 (用户只能访问到等级小于等于这个数字的节点)</label>
 									<input class="form-control" id="class" type="number" value="{$edit_user->class}">
 								</div>
 								
 								
 								
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="class_expire">用户等级过期时间(不过期就请不要动)</label>
+									<label class="floating-label" for="class_expire">用户等级过期时间 (不过期就请不要动)</label>
 									<input class="form-control" id="class_expire" type="text" value="{$edit_user->class_expire}">
 								</div>
 								
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="expire_in">用户账户过期时间(不过期就请不要动)</label>
+									<label class="floating-label" for="expire_in">用户账户过期时间 (不过期就请不要动)</label>
 									<input class="form-control" id="expire_in" type="text" value="{$edit_user->expire_in}">
 								</div>
 								
@@ -192,12 +192,12 @@
 							<div class="card-inner">
 								
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="node_speedlimit">用户限速，用户在每个节点所享受到的速度(0 为不限制)(Mbps)</label>
+									<label class="floating-label" for="node_speedlimit">用户限速，用户在每个节点所享受到的速度 (0 为不限制，单位 Mbps)</label>
 									<input class="form-control" id="node_speedlimit" type="text" value="{$edit_user->node_speedlimit}">
 								</div>
 								
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="node_connector">用户同时连接 IP 数(0 为不限制)</label>
+									<label class="floating-label" for="node_connector">用户同时连接 IP 数 (0 为不限制)</label>
 									<input class="form-control" id="node_connector" type="text" value="{$edit_user->node_connector}">
 								</div>
 							</div>
@@ -209,7 +209,7 @@
 							<div class="card-inner">
 								
 								<div class="form-group form-group-label">
-									<label class="floating-label" for="node_speedlimit">禁止用户访问的IP，一行一个</label>
+									<label class="floating-label" for="node_speedlimit">禁止用户访问的 IP，一行一个</label>
 									<textarea class="form-control" id="forbidden_ip" rows="8">{$edit_user->get_forbidden_ip()}</textarea>
 								</div>
 								
