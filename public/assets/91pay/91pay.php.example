@@ -41,7 +41,7 @@ $codepay_config['return_url'] = $codepay_config['host'].'/pay91';
 $codepay_config['go_time'] = 3; //3秒跳转页面 默认为首页
 $codepay_config['go_url'] =  $_SERVER["SERVER_PORT"] == '80' ? '/' : '//'.$_SERVER['SERVER_NAME'];
 //如果使用CDN，请在此处设置为真实服务器地址（可以解析一个非常复杂的二级域名到服务器上），以免回调失败。
-//举个例子：$codepay_config['notify_url'] = 'https://91vps.win/notify';
+//举个例子：$codepay_config['notify_url'] = 'https://domain.com/notify';
 $codepay_config['notify_url'] = $codepay_config['host'].'/notify';
 if (empty($_POST)) $_POST = $_GET;
 $user = $_POST['user'];

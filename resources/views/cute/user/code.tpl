@@ -19,7 +19,7 @@
 	<div class="content-header ui-content-header">
 		<div class="container">
 			<h1 class="content-heading">请使用充值码进行充值</h1>
-			<h5 class="content-heading">购买充值码请发送邮件到 <a href="mailto:support@karula.org?subject=ReBirth Cloud | 充值码购买" class="content-heading">support@karula.org</a>，并在邮件中注明你的联系方式，我们将会尽快（24小时内）与你取得联系。</h5>
+			<h5 class="content-heading">购买充值码请发送<a href="/user/ticket" class="content-heading">工单</a>，并注明你的联系方式，我们将会尽快（24小时内）与你取得联系。</h5>
 			<!--<h4 class="content-heading">当前余额：{$user->money} 元</h4>-->
 		</div>
 	</div>

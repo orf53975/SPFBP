@@ -38,7 +38,6 @@ class Pay
 							<option value="20">20元</option>
 							<option value="50">50元</option>
 							<option value="100">100元</option>
-							<option value="200">200元</option>
 						</select>
 						<p></p>
 						<a class="btn btn-flat waves-attach" id="urlChange" ><span class="icon">check</span>&nbsp;充值</a>
@@ -74,7 +73,6 @@ class Pay
                         <option value="20">20元</option>
                         <option value="50">50元</option>
                         <option value="100">100元</option>
-                        <option value="200">200元</option>
                         </select>
                         <br>
                         <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type">充值</button>
@@ -89,18 +87,17 @@ class Pay
 						<label for="number">请选择充值金额：</label>
        					<form name="alipayment" action="/assets/91pay/91pay.php" method="post">
 						<select class="form-control" id="price" name="price">
-                        <option value="10">10元(用于测试本站实时到账功能)</option>
+                        <option value="10">10元</option>
                         <option value="20">20元</option>
                         <option value="50">50元</option>
                         <option value="100">100元</option>
-                        <option value="200">200元</option>
                         </select>
                         <br>
                         <input type="hidden" name="user" value="'.$user->id.'">
                         <input type="hidden" name="seller" value="'.Config::get("alipay").'">
-                        <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="3"><img src="/assets/91pay//img/weixin.jpg"/></button>
-                        <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="1"><img src="/assets/91pay/img/alipay.jpg"/></button>
-                        <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="2"><img src="/assets/91pay//img/qqpay.jpg"/></button>
+                        <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="1"><img src="/assets/91pay/img/alipay.png"/></button>
+                        <!--<button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="2"><img src="/assets/91pay/img/qqpay.jpg"/></button>-->
+                        <!--<button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="3"><img src="/assets/91pay/img/weixin.jpg"/></button>-->
                         </form>         
 ';
     }
