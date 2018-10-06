@@ -83,7 +83,7 @@ class Pay
     private static function pay91($user)
     {
         return '
-						<p class="card-heading">点击对应支付方式进行充值</p>
+						<p class="card-heading">支付宝充值</p>
 						<label for="number">请选择充值金额：</label>
        					<form name="alipayment" action="/assets/91pay/91pay.php" method="post">
 						<select class="form-control" id="price" name="price">
@@ -95,7 +95,8 @@ class Pay
                         <br>
                         <input type="hidden" name="user" value="'.$user->id.'">
                         <input type="hidden" name="seller" value="'.Config::get("alipay").'">
-                        <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="1"><img src="/assets/91pay/img/alipay.png"/></button>
+                        <button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="1">继续支付</button>
+                        <!--<button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="1"><img src="/assets/91pay/img/alipay.png"/></button>-->
                         <!--<button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="2"><img src="/assets/91pay/img/qqpay.jpg"/></button>-->
                         <!--<button class="btn btn-flat waves-attach" id="btnSubmit" type="submit" name="type" value="3"><img src="/assets/91pay/img/weixin.jpg"/></button>-->
                         </form>         
@@ -464,10 +465,10 @@ class Pay
                 $Payback->datetime=time();
                 $Payback->save();
             }
-            $html = file_get_contents('https://raw.githubusercontent.com/mmmwhy/mod/master/sql/fbiwarning');
+            $html = "快来给我打赏吧！";
             echo '
 <script>
-    alert("'.$html.'");
+    alert("'.$html.'ku");
     window.location.href="/user/code";
 </script>
 ';
@@ -515,7 +516,7 @@ class Pay
             if($param==substr(md5($_SERVER['HTTP_HOST']),6,5)){
                 echo "success"; //说明数据已经处理完毕
             }else{
-                $html = file_get_contents('https://raw.githubusercontent.com/mmmwhy/mod/master/sql/fbiwarning');
+                $html = "快来给我打赏吧！";
                 echo $html;
             }
             return;
