@@ -122,7 +122,9 @@
 						<a class="waves-attach sub" data-toggle="collapse" href="#ui_menu_detect">审计</a>
 						<ul class="menu-collapse collapse in" id="ui_menu_detect">
 							<li><a href="/user/detect"><i class="icon icon-lg">account_balance</i>&nbsp;审计规则</a></li>
+							{if $user->isAdmin()}
 							<li><a href="/user/detect/log"><i class="icon icon-lg">assignment_late</i>&nbsp;审计记录</a></li>
+							{/if}
 						</ul>
 						
 						<a class="waves-attach sub" data-toggle="collapse" href="#ui_menu_trade">帮助</a>

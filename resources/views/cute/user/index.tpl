@@ -244,6 +244,40 @@
 								</div>
 							</div>
 
+							<div class="card" style="display: none">
+								<div class="card-main">
+									<div class="card-inner margin-bottom-no">
+										<p class="card-heading">续命获取流量</p>
+											<p>流量不会重置，可以通过续命获取流量。</p>
+
+											<p>每次续命可以获取{$config['checkinMin']}~{$config['checkinMax']}MB流量。</p>
+
+											<p>每天可以续命一次。您可以点击按钮或者摇动手机来续命。</p>
+
+											<p>上次续命时间：<code>{$user->lastCheckInTime()}</code></p>
+
+											<p id="checkin-msg"></p>
+
+											{if $geetest_html != null}
+												<div id="popup-captcha"></div>
+											{/if}
+									</div>
+
+									<div class="card-action">
+										<div class="card-action-btn pull-left">
+											{if $user->isAbleToCheckin() }
+												<p id="checkin-btn">
+													<button id="checkin" class="btn btn-brand btn-flat waves-attach"><span class="icon">check</span>&nbsp;续命</button>
+												</p>
+											{else}
+												<p><a class="btn btn-brand disabled btn-flat waves-attach"><span class="icon">check</span>&nbsp;不能续命</a></p>
+											{/if}
+										</div>
+									</div>
+
+								</div>
+							</div>
+
 						</div>
 
 						<div class="col-lg-6 col-md-6" style="display: none">
