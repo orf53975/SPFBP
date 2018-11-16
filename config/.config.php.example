@@ -98,7 +98,7 @@ $System_Config['enable_duoshuo']='false';
 
 
 #用户过期时间，在注册时设置。（天）
-$System_Config['user_expire_in_default']='99999';
+$System_Config['user_expire_in_default']='186';
 
 #Radius数据库设置
 $System_Config['radius_db_host']='localhost';
@@ -242,7 +242,7 @@ $System_Config['enable_bought_reset']='false';
 $System_Config['enable_account_expire_delete']='true';
 
 #账户到期几天之后会删除账户
-$System_Config['enable_account_expire_delete_days']='0';
+$System_Config['enable_account_expire_delete_days']='31';
 
 #验证码相关设置，自己去 Geetest.com 申请
 $System_Config['geetest_id']='';
