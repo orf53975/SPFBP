@@ -283,8 +283,19 @@ CREATE TABLE IF NOT EXISTS `shop` (
 -- 转存表中的数据 `shop`
 --
 
-INSERT INTO `shop` VALUES (1,'【其他】体验套餐',1.00,'{\"bandwidth\":\"1\",\"class\":\"2\",\"class_expire\":\"1\"}',0,0,1),(2,'【VIP1】月付',6.00,'{\"bandwidth\":\"10\",\"class\":\"1\",\"class_expire\":\"31\"}',30,0,1),(3,'【VIP1】季付',15.00,'{\"bandwidth\":\"35\",\"class\":\"1\",\"class_expire\":\"93\"}',90,0,1),(4,'【VIP1】半年付',30.00,'{\"bandwidth\":\"100\",\"class\":\"1\",\"class_expire\":\"186\"}',180,0,1),(5,'【VIP1】年付',50.00,'{\"bandwidth\":\"200\",\"class\":\"1\",\"class_expire\":\"372\"}',360,0,1),(6,'【VIP2】月付',10.00,'{\"bandwidth\":\"20\",\"class\":\"2\",\"class_expire\":\"31\"}',30,0,1),(7,'【VIP2】季付',28.00,'{\"bandwidth\":\"70\",\"class\":\"2\",\"class_expire\":\"93\"}',90,0,1),(8,'【VIP2】半年付',55.00,'{\"bandwidth\":\"180\",\"class\":\"2\",\"class_expire\":\"186\"}',180,0,1),(9,'【VIP2】年付',100.00,'{\"bandwidth\":\"500\",\"class\":\"2\",\"class_expire\":\"372\"}',360,0,1),(10,'【其他】100GB流量包',15.00,'{\"bandwidth\":\"100\"}',0,0,1),(11,'【其他】500GB流量包',50.00,'{\"bandwidth\":\"500\"}',0,0,1);
-
+INSERT INTO `shop` (`id`, `name`, `price`, `content`, `auto_renew`, `auto_reset_bandwidth`, `status`) VALUES
+(1, '【其他】体验套餐', '1.00', '{"bandwidth":"1","class":"2","class_expire":"1"}', 0, 0, 0),
+(2, '【VIP1】月付', '6.00', '{"bandwidth":"10","expire":"31","class":"1","class_expire":"31"}', 30, 0, 0),
+(3, '【VIP1】季付', '15.00', '{"bandwidth":"35","expire":"93","class":"1","class_expire":"93"}', 90, 0, 0),
+(4, '【VIP1】半年付', '30.00', '{"bandwidth":"100","expire":"186","class":"1","class_expire":"186"}', 180, 0, 0),
+(5, '【VIP1】年付', '50.00', '{"bandwidth":"200","expire":"372","class":"1","class_expire":"372"}', 360, 0, 0),
+(6, '【VIP2】月付', '10.00', '{"bandwidth":"20","expire":"31","class":"2","class_expire":"31"}', 30, 0, 0),
+(7, '【VIP2】季付', '28.00', '{"bandwidth":"70","expire":"93","class":"2","class_expire":"93"}', 90, 0, 0),
+(8, '【VIP2】半年付', '55.00', '{"bandwidth":"180","expire":"186","class":"2","class_expire":"186"}', 180, 0, 0),
+(9, '【VIP2】年付', '100.00', '{"bandwidth":"500","expire":"372","class":"2","class_expire":"372"}', 360, 0, 0),
+(10, '【其他】100GB流量包', '15.00', '{"bandwidth":"100"}', 0, 0, 0),
+(11, '【其他】500GB流量包', '50.00', '{"bandwidth":"500"}', 0, 0, 0),
+(12, '【其他】半年账号有效期', '6.00', '{"expire":"186"}', 0, 0, 0);
 
 -- --------------------------------------------------------
 
