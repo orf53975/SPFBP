@@ -1,7 +1,5 @@
 # SS-Panel for BT-Panel
 
-[![Github Pre-Releases](https://img.shields.io/badge/downloads-21.0%20MB-brightgreen.svg)](https://github.com/yanranxiaoxi/SPFBP/archive/1.0.0-beta.zip)
-![GitHub code size](https://img.shields.io/badge/code%20size-54.3%20MB-blue.svg)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yanranxiaoxi/SPFBP/blob/master/LICENSE)
 
 ## 环境要求
@@ -39,16 +37,8 @@
 6. 执行 SSH 指令
 
    ```
-   cd /www/wwwroot/domain.com
-   git clone https://github.com/yanranxiaoxi/SPFBP.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard
-   cp config/.config.php.example config/.config.php
-   chown -R root:root *
-   chmod -R 755 *
-   chown -R www:www storage
-   chattr -i .user.ini
-   mv .user.ini ./public
-   cd ./public
-   chattr +i .user.ini
+   cd /www/wwwroot/[domain.com]
+   git clone https://github.com/yanranxiaoxi/SPFBP.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard && cp config/.config.php.example config/.config.php && chown -R root:root * && chmod -R 755 * && chown -R www:www storage && chattr -i .user.ini && mv .user.ini ./public && cd ./public && chattr +i .user.ini
    ```
 
 7. 在 BT-Panel 中重启站点
@@ -58,13 +48,13 @@
    * 每日过期数据整理（Shell 脚本 | 每日执行）
 
       ```
-      php /www/wwwroot/domain.com/xcat dailyjob
+      php /www/wwwroot/[domain.com]/xcat dailyjob
       ```
 
    * 每分钟过期数据检查（Shell 脚本 | 每分钟执行）
 
       ```
-      php /www/wwwroot/domain.com/xcat checkjob
+      php /www/wwwroot/[domain.com]/xcat checkjob
       ```
 
 9. 新建并导入数据库
@@ -76,28 +66,28 @@
    ```php
    # 修改为随机字符串
    $System_Config['key'] = 'randomkey';
-   
+
    # 站点名称
    $System_Config['appName'] = 'SS-Panel';
-   
+
    # 站点地址
    $System_Config['baseUrl'] = 'https://domain.com';
-   
+
    # 节点验权密匙（搭建节点时使用）
    $System_Config['muKey'] = 'mupass';
-   
+
    # 数据库名
    $System_Config['db_database'] = 'spfbp';
-   
+
    # 数据库用户名
    $System_Config['db_username'] = 'root';
-   
+
    # 数据库密码
    $System_Config['db_password'] = 'password';
-   
+
    # 是否启用邮箱验证码（需要有可用的 SMTP 服务器）
    $System_Config['enable_email_verify']='true';
-   
+
    # SMTP 发信部分
    $System_Config['smtp_host'] = 'smtp.domain.com';
    $System_Config['smtp_username'] = 'admin@domain.com';
@@ -109,7 +99,9 @@
    ```
 
 11. 默认用户信息
+
    * 用户名：`admin@domain.local`
+
    * 密码：`,zChr=jwhrP!unMbO>ns4roSv3pj.3uo`
 
 ## 常见问题
@@ -117,12 +109,22 @@
 ### 页面返回错误 json 值
 
    1. PHP 配置修改 `display_errors` `关闭`
-   
+
    2. PHP 性能调整 `运行模式` `静态`
-   
+
    3. 重载 PHP 配置
 
 ## 其他
+
+   * [在线支付](https://github.com/yanranxiaoxi/SPFBP/blob/master/README-pay.md)
+
+   * [转移数据](https://github.com/yanranxiaoxi/SPFBP/blob/master/README-transfer.md)
+
+### 程序升级
+
+```
+git reset --hard && git pull
+```
 
 ### 添加管理员
 
