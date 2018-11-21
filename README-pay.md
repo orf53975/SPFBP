@@ -38,3 +38,7 @@
    # 修改为pay91
    $System_Config['payment_system']='pay91';
    ```
+
+9. 在任意 Windows 系统安装 [码支付监控客户端](https://codepay.fateqq.com/down.html)
+
+   * 请注意：码支付属于第三方平台，我方并不能保证其不做出包括但不限于侵犯用户财产之行为，请自行斟酌使用！
